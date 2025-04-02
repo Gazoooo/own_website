@@ -1,0 +1,14 @@
+Projekte für github usw.:
+s. /home/user/Desktop/Programmieren/Archive
+
+Ideen zum schreiben:
+- Lebenslauf (Gymnasium, Uni)
+- rumexperimentiert mit Raspberry Pi 5
+- >1 Joberfahrung: neben Studium HiWi Stelle AG Verteilte Systeme
+- Vokabeltest-ersteller für Latein Lehrerin, Website für Eltern, PvZ Uniprojekt
+- TP-Ersteller für mich
+- bei Projekten Programmeirsprache bzw. Frameworks o.Ä. hinschreiben
+- Kenntnisse: Docker, Azure Cloud, Windows, Linux Ubuntu, VSCode, piOS
+- bei werddegang auf extra html site mit lebenslauf verlinken (lebenslauf in latex machen)
+- be iwerdgegang job bei apo errwähnen (flyer austeilen, in filiale arbeiten) -> auch "technikbeauftragter" -> hat zum card programm geführt ((legal? darf ich daas schreiben?)
+- text erst auf deutsch, dann überlegen ob auch englisch
