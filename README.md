@@ -1,20 +1,16 @@
-# own_website
-This is my own website showing some projects I made.  
-You can visit it [here](https://gazoooo.github.io/own_website/portfolio.html).
+# 🌐 My Website
+This is my own website showing 
+1. Some infos about me
+2. A portfolio
+3. Contact options
+You can visit it [here](gustavotzen.de).
 
 
 ### Credits
-Solid State by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+This website was built on a template from [HTML5UP](https://html5up.net/).
 
-Demo Images:
-	Unsplash (unsplash.com)
-
-Icons:
-	Font Awesome (fontawesome.io)
-
-Other:
-	jQuery (jquery.com)
-	Scrollex (github.com/ajlkn/jquery.scrollex)
-	Responsive Tools (github.com/ajlkn/responsive-tools)
+Further credits belong to:
+- [Font Awesome](https://fontawesome.com/) for the Icons
+- [jQuery](jquery.com)
+- [Scrollex](github.com/ajlkn/jquery.scrollex)
+- [Responsive Tools](github.com/ajlkn/responsive-tools)
