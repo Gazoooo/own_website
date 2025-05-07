@@ -2,7 +2,8 @@
 This is my own website showing 
 1. Some infos about me
 2. A portfolio
-3. Contact options
+3. Contact options  
+   
 You can visit it [here](gustavotzen.de).
 
 
