@@ -1,0 +1,180 @@
+/* === Global Styles === */
+body {
+  background-color: #1e2235;
+  color: #e6ecff;
+  text-align: center;
+}
+
+/* === Fade-In Animation === */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Helper für gestaffeltes Reinfliegen */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+.fade-in.delay-1 {
+  animation-delay: 0.3s;
+}
+.fade-in.delay-2 {
+  animation-delay: 0.6s;
+}
+
+/* === Bannerbereich === */
+#banner {
+  padding: 4rem 1rem 2rem 1rem;
+  animation: fadeInUp 1.2s ease forwards;
+}
+
+#banner .inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#banner h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+#banner p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: #d0dcff;
+}
+
+/* === Profilbild === */
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  margin-top: 1.5rem;
+  animation: fadeInUp 1.5s ease forwards;
+  animation-delay: 0.4s;
+  transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+}
+
+/* === Kartenbereich === */
+.wrapper.style2 {
+  background: #23283d;
+  padding: 3rem 1.5rem 4rem 1.5rem;
+}
+
+/* Grid für Karten */
+.custom-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+/* Kontaktkarte über gesamte Zeile */
+.contact-card {
+  grid-column: 1 / -1; /* nimmt ganze Zeile ein */
+  max-width: 100%;
+}
+
+/* === Kartenstil === */
+.features section {
+  background: #2a2e44;
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Hover-Effekt */
+.features section:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.5);
+}
+
+/* Icon */
+.features section .icon.major {
+  font-size: 2.5rem;
+  background: none;
+  color: #4db8ff;
+  margin-bottom: 1rem;
+}
+
+/* Überschrift */
+.features section h3 {
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.75rem;
+}
+
+/* Beschreibung */
+.features section p {
+  color: #c7cde8;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* Button */
+.features section a.special {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: #4db8ff;
+  color: #ffffff;
+  padding: 0.7rem 1.4rem;
+  border-radius: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 3px 10px rgba(77, 184, 255, 0.4);
+  transition: all 0.25s ease;
+}
+
+.features section a.special:hover {
+  background: #6bd5ff;
+  box-shadow: 0 5px 16px rgba(107, 213, 255, 0.6);
+  transform: translateY(-2px);
+}
+
+/* === Mobile Ansicht === */
+@media (max-width: 900px) {
+  .custom-grid {
+    grid-template-columns: 1fr; /* alles untereinander */
+  }
+  .contact-card {
+    grid-column: auto; /* normale Breite */
+  }
+  #banner h2 {
+    font-size: 1.8rem;
+  }
+  #banner p {
+    font-size: 1rem;
+  }
+  .profile-img {
+    width: 160px;
+    height: 160px;
+  }
+}
+

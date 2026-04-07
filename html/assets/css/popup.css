@@ -1,0 +1,131 @@
+/* === Popup Overlay === */
+#popup {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(10, 12, 24, 0.75); /* halbtransparentes Overlay */
+  backdrop-filter: blur(6px);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  z-index: 9999;
+}
+
+#popup.show {
+  display: flex;
+  opacity: 1;
+}
+
+/* === Popup Card === */
+#popup .popup-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background: #2a2e44;
+  color: #e6ecff;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  max-width: 380px;
+  width: 90%;
+  min-height: 100px;           /* stabile Höhe */
+  transform: translateY(20px) scale(0.97);
+  opacity: 0;
+  transition: all 0.35s ease;
+  border: 1px solid rgba(77, 184, 255, 0.2);
+  padding: 0.9rem 1.6rem 1.1rem; /* leicht asymmetrisch für optische Balance */
+}
+
+#popup.show .popup-content {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}
+
+/* === Nachricht === */
+#popup-message {
+  font-size: 1.2rem;
+  color: #c7cde8;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+  margin: 0;
+  text-align: center;
+}
+
+/* === Close Button (komplett ohne Box, nur Symbol) === */
+#popup-close {
+  position: absolute;
+  top: 0.4rem;
+  right: 0.8rem;
+
+  /* Optik */
+  color: #aab4d6;
+  font-size: 1.4rem;
+  font-weight: 600;
+
+  /* Box & Verhalten */
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  appearance: none;
+
+  /* Dimensionen */
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  height: auto;
+  width: auto;
+
+  /* Cursor & Transition */
+  cursor: pointer;
+  transform-origin: center;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+#popup-close:hover {
+  color: #4db8ff;
+  transform: scale(1.2);
+}
+
+#popup-close:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+
+/* === Glowing Border (dezent wie deine Karten) === */
+#popup .popup-content::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+  border: 1px solid rgba(77, 184, 255, 0.15);
+  pointer-events: none;
+  box-shadow: 0 0 12px rgba(77, 184, 255, 0.1);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+#popup.show .popup-content::before {
+  opacity: 1;
+}
+
+/* === Popup im Fehlerfall (größer + auffälliger) === */
+#popup.error .popup-content {
+  background: #442a2a;              /* dunkler Rotton */
+  border-color: rgba(255, 77, 77, 0.4);
+  box-shadow: 0 0 25px rgba(255, 77, 77, 0.2);
+  max-width: 480px;                 /* breiter */
+  min-height: 140px;                /* höher */
+  padding: 1.4rem 2rem;             /* etwas mehr Platz */
+}
+
+#popup.error #popup-message {
+  color: #ffbaba;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}

@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="icon" href="assets/images/address-card-solid.svg" type="image/svg+xml">
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/popup.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -22,18 +23,21 @@
 				</header>
 
 			<!-- Menu -->
-				<nav id="menu">
-					<div class="inner">
-						<h2>Menu</h2>
-						<ul class="links">
-							<li><a href="portfolio.html">Portfolio</a></li>
-							<li><a href="assets/CV_public.pdf">Lebenslauf (PDF)</a></li>
-							<li><a href="business.html">Business</a></li>
-							<li><a href="contact.html">Kontakt</a></li>
-						</ul>
-						<a href="#" class="close">Close</a>
-					</div>
-				</nav>
+			<nav id="menu">
+				<div class="inner">
+				<h2>Menu</h2>
+				<ul class="links">
+					<li><a href="index.html">Landing Page</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="lebenslauf.html">Lebenslauf</a></li>
+					<li><a href="business.html">Business</a></li>
+					<li><a href="contact.html">Kontakt</a></li>
+					<li><a href="https://tools.gustavotzen.de">Tools <i class="fas fa-external-link-alt" style="opacity:0.6"></i></a></li>
+            		<li><a href="https://api.gustavotzen.de"> API <i class="fas fa-external-link-alt" style="opacity:0.6"></i></a></li>
+				</ul>
+				<a href="#" class="close">Close</a>
+				</div>
+			</nav>
 
 				<!-- Footer -->
 				<section id="footer">
@@ -43,25 +47,23 @@
 							Hast du eine Frage oder ist irgendwas unklar? 
 							Dann melde dich gerne bei mir! Entweder über meine Social Media Links 
 							oder ganz bequem über das untenstehende Formular. </p>
-							<form method="post" action="#">
-								<p class="warning-text" style="color: red; text-align: center;">Dieses Formular funktioniert momentan nicht. 
-									Bitte benutze eine andere Kontaktmöglichkeit.</p>
+							<form method="post" id="contact-form">
 								<div class="fields">
 									<div class="field">
 										<label for="name">Name</label>
-										<input type="text" name="name" id="name" disabled />
+										<input type="text" name="name" id="name"/>
 									</div>
 									<div class="field">
 										<label for="email">Email</label>
-										<input type="email" name="email" id="email" disabled />
+										<input type="email" name="email" id="email"/>
 									</div>
 									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="4" disabled></textarea>
+										<label for="message">Nachricht</label>
+										<textarea name="message" id="message" rows="4"></textarea>
 									</div>
 								</div>
 								<ul class="actions">
-									<li><input type="submit" value="Send Message" disabled /></li>
+									<li><input type="submit" value="Nachricht abschicken"/></li>
 								</ul>
 							</form>
 							
@@ -77,6 +79,16 @@
 				</section>  
 			</div>
 
+		<!-- Popup for form submission -->
+		<div id="popup">
+  <div class="popup-content">
+    <button id="popup-close">&times;</button>
+    <p id="popup-message"></p>
+  </div>
+</div>
+
+
+
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
@@ -84,6 +96,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/formmail.js" defer></script>
 
 	</body>
 </html>
