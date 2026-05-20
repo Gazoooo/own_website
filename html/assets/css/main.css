@@ -3122,6 +3122,11 @@ input, select, textarea {
 				padding: 0 1em;
 			}
 
+			#header nav a.language-switch {
+				letter-spacing: 0;
+				text-transform: none;
+			}
+
 				#header nav a:before {
 					float: right;
 					margin-left: 0.75em;
