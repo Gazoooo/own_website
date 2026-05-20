@@ -14,6 +14,8 @@
         min-height: 72vh;
         display: flex;
         align-items: center;
+        justify-content: center;
+        text-align: center;
         padding: 8em 0 5em;
         background-image: linear-gradient(to top, rgba(46, 49, 65, 0.9), rgba(46, 49, 65, 0.82)), url("assets/images/bg.jpg");
         background-size: cover;
@@ -21,7 +23,9 @@
       }
 
       #not-found .inner {
+        width: calc(100% - 4em);
         max-width: 46em;
+        margin: 0 auto;
       }
 
       #not-found .code {
@@ -40,6 +44,12 @@
       #not-found p {
         font-size: 1.05em;
         max-width: 36em;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      #not-found .actions {
+        justify-content: center;
       }
 
       @media screen and (max-width: 736px) {
@@ -50,6 +60,10 @@
 
         #not-found .code {
           font-size: 4em;
+        }
+
+        #not-found .inner {
+          width: calc(100% - 2em);
         }
       }
     </style>
