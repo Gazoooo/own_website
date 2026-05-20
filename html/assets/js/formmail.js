@@ -36,7 +36,7 @@ form.addEventListener("submit", function (event) {
     const message = document.getElementById("message").value;
 
     // Send the form data using fetch
-    fetch("https://api.gustavotzen.de/api/send/me", {
+    fetch("https://api.gustavotzen.de/mail/send/me", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
