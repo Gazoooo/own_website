@@ -82,22 +82,27 @@ body {
 /* Grid für Karten */
 .custom-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 2rem;
   justify-items: stretch;
   align-items: stretch;
 }
 
-/* Kontaktkarte über gesamte Zeile */
-.contact-card {
-  grid-column: 1 / -1; /* nimmt ganze Zeile ein */
+/* Three primary cards above two equally sized secondary cards. */
+.custom-grid > section {
+  grid-column: span 2;
+}
+
+.custom-grid > .blog-card,
+.custom-grid > .contact-card {
+  grid-column: span 3;
   max-width: 100%;
 }
 
 /* === Kartenstil === */
 .features section {
   background: #2a2e44;
-  border-radius: 16px;
+  border-radius: 8px;
   padding: 2rem 1.5rem;
   text-align: center;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
@@ -123,7 +128,7 @@ body {
   color: #ffffff;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0;
   margin-bottom: 0.75rem;
 }
 
@@ -144,10 +149,10 @@ body {
   background: #4db8ff;
   color: #ffffff;
   padding: 0.7rem 1.4rem;
-  border-radius: 10px;
+  border-radius: 6px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0;
   box-shadow: 0 3px 10px rgba(77, 184, 255, 0.4);
   transition: all 0.25s ease;
 }
@@ -163,8 +168,10 @@ body {
   .custom-grid {
     grid-template-columns: 1fr; /* alles untereinander */
   }
-  .contact-card {
-    grid-column: auto; /* normale Breite */
+  .custom-grid > section,
+  .custom-grid > .blog-card,
+  .custom-grid > .contact-card {
+    grid-column: auto;
   }
   #banner h2 {
     font-size: 1.8rem;
@@ -177,4 +184,3 @@ body {
     height: 160px;
   }
 }
-

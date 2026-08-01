@@ -2,10 +2,85 @@
 
 <html lang="en">
 <head>
-<title>Contact</title>
+<title>Contact | Gustav Otzen</title>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport"/>
-<link href="https://gustavotzen.de/contact.html" rel="canonical"/><link href="https://gustavotzen.de/contact.html" hreflang="en" rel="alternate"/><link href="https://gustavotzen.de/de/kontakt.html" hreflang="de" rel="alternate"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Contact Gustav Otzen about software development, projects, collaboration, or questions through the contact form and public profiles." name="description"/>
+<meta content="Gustav Otzen" name="author"/>
+<meta content="website" property="og:type"/>
+<meta content="Contact | Gustav Otzen" property="og:title"/>
+<meta content="Contact Gustav Otzen about software development, projects, collaboration, or questions through the contact form and public profiles." property="og:description"/>
+<meta content="https://gustavotzen.de/contact.html" property="og:url"/>
+<meta content="Gustav Otzen" property="og:site_name"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="de_DE" property="og:locale:alternate"/>
+<meta content="https://gustavotzen.de/assets/images/pb_cropped.jpg" property="og:image"/>
+<meta content="Portrait of Gustav Otzen" property="og:image:alt"/>
+<meta content="summary" name="twitter:card"/>
+<meta content="Contact | Gustav Otzen" name="twitter:title"/>
+<meta content="Contact Gustav Otzen about software development, projects, collaboration, or questions through the contact form and public profiles." name="twitter:description"/>
+<meta content="https://gustavotzen.de/assets/images/pb_cropped.jpg" name="twitter:image"/>
+<link href="https://gustavotzen.de/contact.html" rel="canonical"/><link href="https://gustavotzen.de/contact.html" hreflang="en" rel="alternate"/><link href="https://gustavotzen.de/de/kontakt.html" hreflang="de" rel="alternate"/><link href="https://gustavotzen.de/contact.html" hreflang="x-default" rel="alternate"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "ContactPage",
+      "@id": "https://gustavotzen.de/contact.html#webpage",
+      "url": "https://gustavotzen.de/contact.html",
+      "name": "Contact | Gustav Otzen",
+      "description": "Contact Gustav Otzen about software development, projects, collaboration, or questions through the contact form and public profiles.",
+      "inLanguage": "en",
+      "dateModified": "2026-08-01",
+      "isPartOf": {
+        "@id": "https://gustavotzen.de/#website"
+      },
+      "about": {
+        "@id": "https://gustavotzen.de/#person"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://gustavotzen.de/#website",
+      "url": "https://gustavotzen.de/",
+      "name": "Gustav Otzen",
+      "inLanguage": [
+        "de",
+        "en"
+      ],
+      "author": {
+        "@id": "https://gustavotzen.de/#person"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://gustavotzen.de/#person",
+      "name": "Gustav Otzen",
+      "url": "https://gustavotzen.de/",
+      "image": "https://gustavotzen.de/assets/images/pb_cropped.jpg",
+      "jobTitle": "Computer Science Master's Student and Software Developer",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Osnabrück University",
+        "sameAs": "https://www.uni-osnabrueck.de/"
+      },
+      "knowsAbout": [
+        "Software development",
+        "Python",
+        "Web development",
+        "Docker",
+        "Self-hosting",
+        "Automation"
+      ],
+      "sameAs": [
+        "https://github.com/Gazoooo",
+        "https://www.linkedin.com/in/gustav-otzen"
+      ]
+    }
+  ]
+}
+</script>
 <link href="/assets/images/address-card-solid.svg" rel="icon" type="image/svg+xml"/>
 <link href="/assets/css/main.css" rel="stylesheet"/>
 <link href="/assets/css/popup.css" rel="stylesheet">
@@ -32,6 +107,7 @@
 <li><a href="/resume.html">Resume</a></li>
 <li><a href="/business.html">Business</a></li>
 <li><a href="/contact.html">Contact</a></li>
+<li><a href="https://blog.gustavotzen.de/en/">Blog <i class="fas fa-external-link-alt" style="opacity:0.6"></i></a></li>
 <li><a href="https://toolgarden.de">Tools <i class="fas fa-external-link-alt" style="opacity:0.6"></i></a></li>
 <li><a href="https://api.gustavotzen.de"> API <i class="fas fa-external-link-alt" style="opacity:0.6"></i></a></li>
 </ul>
@@ -48,15 +124,15 @@
 <div class="fields">
 <div class="field">
 <label for="name">Name</label>
-<input id="name" name="name" type="text"/>
+<input autocomplete="name" id="name" maxlength="100" name="name" required="" type="text"/>
 </div>
 <div class="field">
 <label for="email">Email</label>
-<input id="email" name="email" type="email"/>
+<input autocomplete="email" id="email" maxlength="254" name="email" required="" type="email"/>
 </div>
 <div class="field">
 <label for="message">Message</label>
-<textarea id="message" name="message" rows="4"></textarea>
+<textarea id="message" maxlength="5000" name="message" required="" rows="4"></textarea>
 </div>
 </div>
 <ul class="actions">
@@ -77,8 +153,8 @@
 <!-- Popup for form submission -->
 <div id="popup">
 <div class="popup-content">
-<button id="popup-close">×</button>
-<p id="popup-message"></p>
+<button aria-label="Close message" id="popup-close" type="button">×</button>
+<p aria-live="polite" id="popup-message"></p>
 </div>
 </div>
 <!-- Scripts -->

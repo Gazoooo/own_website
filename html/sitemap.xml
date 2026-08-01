@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://gustavotzen.de/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gustavotzen.de/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gustavotzen.de/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gustavotzen.de/"/>
+    <lastmod>2026-08-01</lastmod>
+  </url>
+  <url>
+    <loc>https://gustavotzen.de/de/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gustavotzen.de/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gustavotzen.de/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gustavotzen.de/"/>
+    <lastmod>2026-08-01</lastmod>
+  </url>
+  <url>
+    <loc>https://gustavotzen.de/portfolio.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gustavotzen.de/portfolio.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gustavotzen.de/de/portfolio.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gustavotzen.de/portfolio.html"/>
+    <lastmod>2026-08-01</lastmod>
+  </url>
+  <url>
+    <loc>https://gustavotzen.de/de/portfolio.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gustavotzen.de/portfolio.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gustavotzen.de/de/portfolio.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gustavotzen.de/portfolio.html"/>
+    <lastmod>2026-08-01</lastmod>
+  </url>
+  <url>
+    <loc>https://gustavotzen.de/resume.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gustavotzen.de/resume.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gustavotzen.de/de/lebenslauf.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gustavotzen.de/resume.html"/>
+    <lastmod>2026-08-01</lastmod>
+  </url>
+  <url>
+    <loc>https://gustavotzen.de/de/lebenslauf.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gustavotzen.de/resume.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gustavotzen.de/de/lebenslauf.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gustavotzen.de/resume.html"/>
+    <lastmod>2026-08-01</lastmod>
+  </url>
+  <url>
+    <loc>https://gustavotzen.de/business.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gustavotzen.de/business.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gustavotzen.de/de/berufliches.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gustavotzen.de/business.html"/>
+    <lastmod>2026-08-01</lastmod>
+  </url>
+  <url>
+    <loc>https://gustavotzen.de/de/berufliches.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gustavotzen.de/business.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gustavotzen.de/de/berufliches.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gustavotzen.de/business.html"/>
+    <lastmod>2026-08-01</lastmod>
+  </url>
+  <url>
+    <loc>https://gustavotzen.de/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gustavotzen.de/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gustavotzen.de/de/kontakt.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gustavotzen.de/contact.html"/>
+    <lastmod>2026-08-01</lastmod>
+  </url>
+  <url>
+    <loc>https://gustavotzen.de/de/kontakt.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://gustavotzen.de/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://gustavotzen.de/de/kontakt.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://gustavotzen.de/contact.html"/>
+    <lastmod>2026-08-01</lastmod>
+  </url>
+</urlset>
