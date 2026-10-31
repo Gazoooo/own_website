@@ -21,3 +21,22 @@ Further credits belong to:
 - [jQuery](https://jquery.com/)
 - [Scrollex](https://github.com/ajlkn/jquery.scrollex)
 - [Responsive Tools](https://github.com/ajlkn/responsive-tools)
+
+## Container deployment
+
+The website is self-contained: `docker-compose.yaml`, `Dockerfile`,
+`nginx-main.conf`, `nginx.conf`, `.dockerignore`, and the public `html/` folder.
+The shared reverse proxy must already provide the external
+`homelab-static-web` Docker network. The service has no published host ports.
+
+From this repository directory:
+
+```sh
+docker compose config --quiet
+docker compose up -d --build --wait
+docker compose ps
+```
+
+Use the Docker context configured for the target machine. Rebuild after content
+changes because public files are copied into the image; they are not bind-mounted.
+The public hostname, HTTPS certificates and shared ingress are managed separately.

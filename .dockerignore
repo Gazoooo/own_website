@@ -1,0 +1,17 @@
+# Allow only container configuration and public website files into the build.
+**
+!Dockerfile
+!nginx-main.conf
+!nginx.conf
+!html/
+!html/**
+# Preserve the existing exclusions, including metadata nested in vendor folders.
+**/.git
+**/.codex
+**/.env
+**/.env.*
+**/.DS_Store
+**/AGENT.md
+**/AGENTS.md
+**/node_modules
+**/.pnpm-store
