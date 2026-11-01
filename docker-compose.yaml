@@ -30,6 +30,13 @@ services:
       web:
         aliases:
         - site-01
+    volumes:
+    - type: bind
+      source: ./html
+      target: /usr/share/nginx/html
+      read_only: true
+      bind:
+        create_host_path: false
     build:
       context: .
 networks:
